@@ -61,6 +61,8 @@ You will be running your tests in one terminal and debugging in the other. As yo
 Edit the `ReadMe` file with your answers to the questions below.
 
 1. In your own words, define closure (1-2 sentences).
+    what is ?Closures just extend code visibility / availability for nested functions. The extension boundary is the lexical scope.
+    what for ? useful to compose complex logic scattered in easier understandable  pieces.   
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -82,8 +84,11 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
+  The anonymous function returned has extended access to its parent function, so that it can get the 'name' param received from it.
 b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+  it is always creating a new scope per call. 'name' param will remain the same, but a different rolled number is created. 
 c. What is the lexical scope of `newRoll`? 
+  The function personalDice();
 
 
 ### Task 3 - Stretch Goals
